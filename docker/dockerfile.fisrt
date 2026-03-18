@@ -6,6 +6,6 @@ COPY . .
 
 RUN bun install 
 
-CMD ["bun", "run", "index.ts"]
+CMD ["bun", "run", "index.ts"] 
 
 EXPOSE 3000
