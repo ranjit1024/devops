@@ -6,7 +6,7 @@ const server = Bun.serve({
   fetch(req) {
     const url = new URL(req.url)
 
-    // Only allow GET
+   
     if (req.method !== "GET") {
       return new Response("Method Not Allowed", {
         status: 405,
@@ -16,7 +16,6 @@ const server = Bun.serve({
       })
     }
 
-    // Example route
     if (url.pathname === "/") {
       return new Response("Hello from Bun GET server")
     }
